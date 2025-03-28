@@ -2,7 +2,7 @@ import react from 'react';
 
 const PosterSlider=()=>{
     return (
-        <div>in Navbar</div>
+        <div>in PosterSlider</div>
     )
 }
 
