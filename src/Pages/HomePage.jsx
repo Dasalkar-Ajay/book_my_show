@@ -7,9 +7,9 @@ import HeroCarousel from '../Components/HeroCarousel/HeroCarouselComponent';
 
 
 const HomePage = () => {
-    const [recommendedMovies, setRecommendedMovies] = useState([])
-    const [premierMovies, setpremierMovies] = useState([])
-    const [onlineStreamEvents, setonlineStreamEvents] = useState([])
+    const [recommendedMovies, setRecommendedMovies] = useState([]);
+    const [premierMovies, setpremierMovies] = useState([]);
+    const [onlineStreamEvents, setonlineStreamEvents] = useState([]);
     return (
         <>
             <HeroCarousel />
@@ -19,8 +19,8 @@ const HomePage = () => {
             </div>
             <div className='Container mx-auto px-4 md:px-12 my-8'>
                 <PosterSlider title="Recommended Movies "
-                    subject="List of Recommended Movies"
-                    Posetrs={recommendedMovies}
+                    subtitle="List of Recommended Movies"
+                    posters={recommendedMovies}
                     isDark={false}
                 />
             </div>
@@ -32,8 +32,8 @@ const HomePage = () => {
                     </div>
                     <PosterSlider
                      title="premiers"
-                        subject="Brand new Releases every friday"
-                        Posetrs={premierMovies}
+                        subtitle="Brand new Releases every friday"
+                        posters={premierMovies}
                         isDark={true}
                     />
                 </div>
@@ -42,8 +42,8 @@ const HomePage = () => {
             <div className="Container mx-auto px-5 md:px-12 my-8">
                 <PosterSlider
  title="Online Streaming Events"
- subject="Online Stream Events"
- Posetrs={onlineStreamEvents}
+ subtitle="Online Stream Events"
+ posters={onlineStreamEvents}
  isDark={false}
                 />
             </div>
