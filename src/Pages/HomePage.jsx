@@ -13,7 +13,7 @@ const HomePage = () => {
     return (
         <>
             <HeroCarousel />
-            <div className='Container mx-auto px-4 md:px-12 my-8'>
+            <div className='Container mx-auto px-5 md:px-12 my-8'>
                 <h1 className="text-2xl  font-bold text-gray-800  sm:ml-3 ml-0 my-3"> The best of Entertainment</h1>
                 <EntertainmentCardComponent />
             </div>
@@ -26,7 +26,7 @@ const HomePage = () => {
             </div>
 
             <div className="bg-premier-800 py-12">
-                <div className="container mx-auto px-4 md:px-12 my-8 flex flex-col gap-3">
+                <div className="container mx-auto px-5 md:px-12 my-8 flex flex-col gap-3">
                     <div className="hidden md:flex">
                         {/* <img src="http://egov.eletsonline.com/wp-content/uploads/2015/03/RuPay.svg_.png" alt="Rupay" className="w-full h-full" /> */}
                     </div>
@@ -39,7 +39,7 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <div className="Container mx-auto px-4 md:px-12 my-8">
+            <div className="Container mx-auto px-5 md:px-12 my-8">
                 <PosterSlider
  title="Online Streaming Events"
  subject="Online Stream Events"
