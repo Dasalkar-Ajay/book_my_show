@@ -1,7 +1,12 @@
 import React from "react";
 
-const Poster = () => {
-    return <div>Poster</div>
+const Poster = (props) => {
+    return (
+<>
+
+
+</>
+    );
 }
 
 export default Poster
