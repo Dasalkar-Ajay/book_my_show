@@ -13,6 +13,28 @@ const HomePage = () => {
     const [onlineStreamEvents, setonlineStreamEvents] = useState([]);
 
     useEffect(() => {
+        const requestPopularMovies = async () => {
+          const getPopularMovies = await axios.get(
+            "https://api.themoviedb.org/3/movie/popular?api_key=d528d17a8267c57ec664b0daf0925d27"
+        );
+          setpremierMovies(getPopularMovies.data.results);
+        };
+        requestPopularMovies();
+      }, []);
+
+      
+    useEffect(() => {
+        const requestUpcomingMovies = async () => {
+          const getUpcomingMovies = await axios.get(
+            "https://api.themoviedb.org/3/movie/upcoming?api_key=d528d17a8267c57ec664b0daf0925d27"
+          );
+          setonlineStreamEvents(getUpcomingMovies.data.results);
+        };
+        requestUpcomingMovies();
+      }, []);
+
+
+    useEffect(() => {
         const requestTopRatedMovies = async () => {
           const getTopRatedMovies = await axios.get(
             "https://api.themoviedb.org/3/movie/top_rated?api_key=d528d17a8267c57ec664b0daf0925d27"
@@ -39,7 +61,7 @@ const HomePage = () => {
 
             <div className="bg-premier-800 py-12">
                 <div className="container mx-auto px-5 md:px-12 my-8 flex flex-col gap-3">
-                    <div className="hidden md:flex">
+                    <div className="hidden md:flex text">
                         {/* <img src="http://egov.eletsonline.com/wp-content/uploads/2015/03/RuPay.svg_.png" alt="Rupay" className="w-full h-full" /> */}
                     </div>
                     <PosterSlider
