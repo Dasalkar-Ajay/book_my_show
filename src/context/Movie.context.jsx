@@ -10,6 +10,7 @@ const MovieProvider = ({ children }) => {
     backdrop_path: "",
     poster_path: "",
   });
+
   return <MovieContext.Provider value={{movie, setMovie }}>{children}</MovieContext.Provider>;
 };
 
