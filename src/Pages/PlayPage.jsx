@@ -5,6 +5,7 @@ import DefaultLayoutHoc from "../Layout/Default.Layout";
 import Poster from "../Components/Poster/Poster.Component";
 import PlayFilters from "../Components/PlayFilters/PlayFilters.Components";
 
+
 const PlayPage = () => {
   return (
     <>
@@ -15,7 +16,7 @@ const PlayPage = () => {
             <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
               <Poster
                 isPlay={true}
-                src=""
+                src="https://picsum.photos/200/300?random=1"
                 title="So Rude of Me By Sweets"
                 subtitle="Comedy Shows | English, Kannada | 18yrs+ | 2hr 30mins"
               />
@@ -23,7 +24,7 @@ const PlayPage = () => {
             <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
               <Poster
                 isPlay={true}
-                src=""
+                src="https://picsum.photos/200/300?random=2"
                 title="So Rude of Me By Sweets"
                 subtitle="Comedy Shows | English, Kannada | 18yrs+ | 2hr 30mins"
               />
@@ -31,7 +32,7 @@ const PlayPage = () => {
             <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
               <Poster
                 isPlay={true}
-                src=""
+                src="https://picsum.photos/200/300?random=3"
                 title="So Rude of Me By Sweets"
                 subtitle="Comedy Shows | English, Kannada | 18yrs+ | 2hr 30mins"
               />
@@ -39,7 +40,7 @@ const PlayPage = () => {
             <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
               <Poster
                 isPlay={true}
-                src=""
+                src="https://picsum.photos/200/300?random=4"
                 title="So Rude of Me By Sweets"
                 subtitle="Comedy Shows | English, Kannada | 18yrs+ | 2hr 30mins"
               />
@@ -47,7 +48,7 @@ const PlayPage = () => {
             <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
               <Poster
                 isPlay={true}
-                src=""
+                src="https://picsum.photos/200/300?random=5"
                 title="So Rude of Me By Sweets"
                 subtitle="Comedy Shows | English, Kannada | 18yrs+ | 2hr 30mins"
               />
@@ -55,7 +56,7 @@ const PlayPage = () => {
             <div className="w-1/2 md:w-1/3 lg:w-3/12 my-3 flex items-center">
               <Poster
                 isPlay={true}
-                src=""
+                src="https://picsum.photos/200/300?random=6"
                 title="So Rude of Me By Sweets"
                 subtitle="Comedy Shows | English, Kannada | 18yrs+ | 2hr 30mins"
               />
@@ -72,7 +73,10 @@ const PlayPage = () => {
             />
           </div>
           <div>
-            <PlayFilters title="Language" tags={["English", "Kannada", "Hindi", "Telgu"]} />
+            <PlayFilters
+              title="Language"
+              tags={["English", "Kannada", "Hindi", "Telgu"]}
+            />
           </div>
         </div>
       </div>
